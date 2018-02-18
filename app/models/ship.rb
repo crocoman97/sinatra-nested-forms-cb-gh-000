@@ -4,4 +4,6 @@ class Ship
   attr_reader :all 
   @@all = []
   
+  
+  
 end
