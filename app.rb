@@ -1,5 +1,5 @@
 require './environment'
-require_relative 'app/models/pirate'
+require_all 'app/models/pirate'
 
 module FormsLab
   class App < Sinatra::Base
