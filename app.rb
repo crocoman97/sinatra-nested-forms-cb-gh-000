@@ -18,7 +18,9 @@ module FormsLab
       binding.pry
       # @pirate = Pirate.new(params[:pirate])
       # puts = params[:pirate][:ships]
-      
+      params[:pirate][:ships].each { |attributes|
+        Ship.new(attributes)
+      }
       
       erb :'pirates/show'
       
