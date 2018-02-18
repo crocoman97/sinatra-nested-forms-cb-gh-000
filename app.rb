@@ -1,4 +1,5 @@
 require './environment'
+require 'views/pirates/new'
 
 module FormsLab
   class App < Sinatra::Base
@@ -8,7 +9,7 @@ module FormsLab
     end
     
     get '/new' do 
-      erb :/pirates/new end
+      erb :new 
     end
     
   end
