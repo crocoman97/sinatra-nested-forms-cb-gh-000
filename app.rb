@@ -1,5 +1,5 @@
 require './environment'
-require_all 'app/models/pirate'
+require_all './app/models/pirate'
 
 module FormsLab
   class App < Sinatra::Base
@@ -13,6 +13,9 @@ module FormsLab
     end
     
     post '/pirates' do 
+      pirate = Pirate.new(params["student"])
+      params["student"]["ship"]
+      ships = Ship.new(params["student"]["ship"])
       erb :'pirates/show'
     end
     
