@@ -6,7 +6,7 @@ class Pirate
   
   def initialize(attributes)
     attributes.delete(:ships)
-    attributes.each { |k,v| self.send("#{k}=",v) }
+    attributes.each { |k,v| self.send("#{k}=",v) unless k == "ships" }
     @@all << self 
   end
   
