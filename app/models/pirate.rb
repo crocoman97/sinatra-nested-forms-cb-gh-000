@@ -9,7 +9,7 @@ class Pirate
     attributes.each { |k,v|
       self.send("#{k}=",v)
     }
-    @@all.<<(self)
+    @@all << self 
   end
   
   def self.all 
