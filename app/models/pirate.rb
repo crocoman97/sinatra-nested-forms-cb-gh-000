@@ -5,7 +5,7 @@ class Pirate
   @@all = []
   
   def initialize(attributes)
-    #attributes.delete(:ships)
+    attributes.delete(:ships)
     attributes.each { |k,v|
       self.send("#{k}=",v)
     }
