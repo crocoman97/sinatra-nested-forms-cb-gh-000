@@ -12,7 +12,6 @@ module FormsLab
     end
     
     post '/pirates' do 
-      puts params
       erb :'pirates/show'
     end
     
