@@ -14,7 +14,7 @@ module FormsLab
     
     post '/pirates' do 
       puts params
-      pirate = Pirate.new(params[:student])
+      @pirate = Pirate.new(params[:student])
       params[:student][:ships].each { |attributes| 
         Ship.new(attributes)
       }
