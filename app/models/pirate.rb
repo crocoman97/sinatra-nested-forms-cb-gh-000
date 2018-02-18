@@ -5,7 +5,6 @@ class Pirate
   @@all = []
   
   def initialize(attributes)
-    attributes.delete(:ships)
     attributes.each { |k,v| self.send("#{k}=",v) unless k == "ships" }
     @@all << self 
   end
