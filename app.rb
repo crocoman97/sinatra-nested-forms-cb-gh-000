@@ -9,7 +9,7 @@ module FormsLab
     
     get '/new' do 
       require_relative 'views/pirates/new'
-      erb :new
+      erb ':new'
     end
     
   end
